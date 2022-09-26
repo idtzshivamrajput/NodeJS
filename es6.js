@@ -11,15 +11,13 @@
 // try catch
 
 
-
 //templating string
 
 var name= 'raj';
 
 var city= 'Gwaliorr';
 // console.log("hello" + name + "and city" + city + "string");
-console.log('${name}, you are from ${city}.');
-
+console.log(`${name}, you are from ${city}.`);
 
 
 //class
@@ -30,4 +28,4 @@ class student{
      phone = 87942572
 }
 var data = new student();
-console.log(data.phone);
+console.log(data.name);
