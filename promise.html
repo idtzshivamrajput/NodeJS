@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+
+	<script>
+		function param(complete){
+			return new Promise(function(resolve,reject){
+				console.log('fetching data,please wait.....')
+
+				setTimeout(()=>{
+					if(complete){
+				 	resolve('Promise was Successfull')
+				 }
+
+				 else{
+					reject('Promise is broken')
+				 }
+
+				},3000)
+
+
+				// if(complete){
+				// 	resolve('Promise was Successfull')
+				// }
+
+				// else{
+				// 	reject('Promise is broken')
+				// }
+			})
+		}
+        console.log('2')
+		param(true).then((r)=>{
+			console.log(r)
+
+		}).catch((error)=>{
+			console.log(error)
+		})
+		console.log('1')
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
